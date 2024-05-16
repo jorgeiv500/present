@@ -1,0 +1,146 @@
+---
+title: "SEMANA C&I"
+css: 'custom.css'
+subtitle: "Workshop en Inteligencia Artificial"
+author: Jorge Ivan Romero
+logo: 'imagenes/70años-fondososcuros.png'
+footer: ''
+
+
+
+code-annotations: hover
+format: 
+  revealjs:
+    scrollable: true
+    theme: custom.scss
+    transition: slide
+    chalkboard: true
+    preview-links: auto
+    background-transition: fade
+    menu:
+      side: left
+      width: third
+
+execute:
+  echo: false
+jupyter: python3
+---
+
+# Conceptos Básicos de la IA
+## ¿Qué es la Inteligencia Artificial?
+La IA es la capacidad de una máquina para imitar la inteligencia humana.
+
+![](imagenes/termin-removebg-preview.png)
+
+---
+
+## Tipos de IA
+- **IA débil:** Sistemas diseñados para realizar tareas específicas.  
+- **IA fuerte:** Sistemas con capacidades cognitivas similares a las humanas (aún teórica).
+---
+
+# Principales Tecnologías en IA
+## Machine Learning (ML)
+Permite a las máquinas aprender a partir de datos y mejorar con la experiencia.
+
+- Ejemplo: Filtros de spam en correos.
+![Machine Learning](https://miro.medium.com/v2/resize:fit:920/1*CS-OYdiRLCBMBiOpEURy0g.png)
+
+---
+
+## Deep Learning (DL)
+Utiliza redes neuronales para modelar patrones complejos en grandes cantidades de datos.
+
+- Ejemplo: Reconocimiento de imágenes.
+- 
+![Deep Learning](https://d22k5h68hofcrd.cloudfront.net/magefan_blog/hero-reconocimiento_facial.jpg)
+
+---
+
+## Procesamiento del Lenguaje Natural (NLP)
+Permite a las máquinas entender y responder a lenguajes humanos.
+- Ejemplo: Chatbots.
+![Procesamiento del Lenguaje Natural](https://s8.easternpeak.com/wp-content/uploads/2021/08/How-Chatbots-Work.png)
+
+---
+
+
+## Cómo aprende la IA: Métodos y Aplicaciones 
+
+-   Aprendizaje Automático: Modelos que aprenden de ejemplos.
+-   Métodos de Aprendizaje: Supervisado, no supervisado, y por refuerzo.
+-   Aplicaciones Prácticas: Asistentes virtuales, vehículos autónomos, y más.
+
+## Cómo aprende la IA: Métodos y Aplicaciones 
+
+![Clasificación](imagenes/clasificacion.png)
+
+## Cómo aprende la IA: Métodos y Aplicaciones 
+
+![Ejemplos](imagenes/ejemplos.png)
+
+
+---
+
+
+# Demostración Práctica
+
+
+# Interacción con MidJourney
+# ¿Qué es MidJourney?
+
+MidJourney es una herramienta de inteligencia artificial que genera imágenes a partir de descripciones textuales. Utiliza avanzados modelos de aprendizaje profundo para interpretar las entradas de texto y producir representaciones visuales detalladas y creativas.
+
+## ¿Cómo Funciona?
+
+1. **Entrada de Texto:** El usuario proporciona una descripción detallada de la imagen que desea generar.
+2. **Procesamiento del Texto:** MidJourney utiliza modelos de lenguaje natural para interpretar la descripción y entender el contexto.
+3. **Generación de Imagen:** Basado en la interpretación del texto, el modelo de IA genera una imagen que representa fielmente la descripción proporcionada.
+4. **Interacción:** Los usuarios pueden iterar y refinar las descripciones para ajustar y mejorar la imagen generada.
+
+## Ejemplo de Prompt
+
+
+```plaintext
+
+\imagine An image representing a workshop on Artificial Intelligence, featuring diverse participants engaging with AI technologies such as robots, neural networks, and machine learning models, in a collaborative and interactive environment.
+```
+<button onclick="startMidJourney()">Generar Imagen</button>
+<div id="midjourney-output"></div>
+
+<script>
+    function startMidJourney() {
+        const midjourneyOutput = document.getElementById('midjourney-output');
+        midjourneyOutput.innerHTML = '<p>Generando imagen...</p><img src="imagenes/resultado.png" alt="Imagen generada por IA">';
+    }
+</script>
+
+
+---
+## Midjourney {background-iframe="https://discord.com/channels/662267976984297473/999550150705954856"}
+
+---
+
+## Interacción con ChatGPT
+Preguntas y respuestas en tiempo real sobre IA.
+<button onclick="startChatGPT()">Iniciar ChatGPT</button>
+<div id="chatgpt-output"></div>
+
+<script>
+    function startChatGPT() {
+        const chatOutput = document.getElementById('chatgpt-output');
+        chatOutput.innerHTML = '<p><strong>Pregunta:</strong> ¿Qué es la inteligencia artificial?</p><p><strong>Respuesta:</strong> La inteligencia artificial (IA) es la simulación de procesos de inteligencia humana por parte de máquinas, especialmente sistemas informáticos.</p>';
+    }
+</script>
+
+---
+## Interacción con ChatGPT -2
+Preguntas:
+
+- ¿Qué es la inteligencia artificial y cómo funciona?
+- ¿Cuáles son las aplicaciones más importantes de la inteligencia artificial en la ingenieria?
+
+---
+# Cierre y Preguntas Finales
+Resumen de lo aprendido.  
+Sesión de preguntas y respuestas.
